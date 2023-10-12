@@ -16,7 +16,7 @@ export const ColumnSorter: React.FC<ColumnButtonProps> = ({ column }) => {
             onClick={column.getToggleSortingHandler()}
             style={{
                 transition: "transform 0.25s",
-                transform: `rotate(${sorted === "asc" ? "180" : "0"}deg)`,
+                transform: `rotate(${sorted === "asc" ? "180" : "-180"}deg)`,
             }}
             variant={sorted ? "light" : "transparent"}
             color={sorted ? "primary" : "gray"}
